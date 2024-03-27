@@ -349,7 +349,7 @@ button:disabled {
 }
 
 .plus::before {
-  width: 12.5px;
+  width: 12px;
   height: 2px;
   top: 9px;
   left: -1.5px;
@@ -363,7 +363,7 @@ button:disabled {
 }
 
 .minus::before {
-  width: 12.5px;
+  width: 12px;
   height: 2px;
   top: 9px;
   left: -1.5px;
