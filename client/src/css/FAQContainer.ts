@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
   .container {
     width: 90vw;
     border-radius: var(--radius);
