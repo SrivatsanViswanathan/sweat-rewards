@@ -16,9 +16,11 @@ const Wrapper = styled.section`
     justify-content: center;
     text-align: center;
     width: 100%;
+    margin-bottom: 1rem;
   }
   h4 {
     margin-bottom: 0.5rem;
+    font-size: 1.75rem;
   }
   .img {
     height: auto;
