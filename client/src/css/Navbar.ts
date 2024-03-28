@@ -47,7 +47,8 @@ const Wrapper = styled.div`
     height: 4.5rem;
   }
   .img {
-    width: 75%;
+    width: 12rem;
+    height: auto;
   }
   @media (min-width: 992px) {
     .nav-toggle {
@@ -69,6 +70,10 @@ const Wrapper = styled.div`
     }
     .links a:hover {
       padding-left: 1rem;
+    }
+    .img {
+      width: 15rem;
+      height: auto;
     }
   }
 `;
