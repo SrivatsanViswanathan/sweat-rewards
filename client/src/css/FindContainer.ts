@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.section`
   text-align: center;
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
   .container {
     display: grid;
     justify-content: center;
@@ -16,19 +16,18 @@ const Wrapper = styled.section`
     justify-content: center;
     text-align: center;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     height: auto;
   }
   h4 {
     margin-bottom: 0.5rem;
     font-size: 1.75rem;
-    max-height: 2.5rem;
   }
   .img {
+    width: 80vw;
     height: auto;
     object-fit: cover;
     max-width: var(--fixed-width);
-    width: 80vw;
   }
   @media (min-width: 992px) {
     padding-bottom: 3rem;
