@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.section`
   text-align: center;
-  padding-bottom: 8rem;
+  padding-bottom: 0.5rem;
   .container {
     display: grid;
     justify-content: center;
@@ -25,7 +25,7 @@ const Wrapper = styled.section`
   }
   .img {
     width: 80vw;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     max-width: var(--fixed-width);
   }
