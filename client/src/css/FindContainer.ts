@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.section`
   text-align: center;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
   .container {
     display: grid;
     justify-content: center;
@@ -16,7 +16,7 @@ const Wrapper = styled.section`
     justify-content: center;
     text-align: center;
     width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     height: auto;
   }
   h4 {
@@ -30,7 +30,7 @@ const Wrapper = styled.section`
     max-width: var(--fixed-width);
   }
   @media (min-width: 992px) {
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     .container {
       grid-template-columns: 1fr 1fr 1fr;
       justify-content: center;
