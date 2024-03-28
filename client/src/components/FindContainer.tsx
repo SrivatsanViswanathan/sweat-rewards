@@ -15,7 +15,7 @@ const FindContainer = () => {
             src={profile}
             alt='profile'
             rel='preload'
-            loading='lazy'
+            fetchPriority='high'
           />
         </div>
         <div className='section'>
@@ -25,7 +25,7 @@ const FindContainer = () => {
             src={receive}
             alt='receive'
             rel='preload'
-            loading='lazy'
+            fetchPriority='high'
           />
         </div>
         <div className='section'>
@@ -35,7 +35,7 @@ const FindContainer = () => {
             src={wallet}
             alt='wallet'
             rel='preload'
-            loading='lazy'
+            fetchPriority='high'
           />
         </div>
       </div>
