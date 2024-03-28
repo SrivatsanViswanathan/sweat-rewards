@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.section`
   text-align: center;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   .container {
     display: grid;
     justify-content: center;
@@ -31,6 +31,7 @@ const Wrapper = styled.section`
     width: 80vw;
   }
   @media (min-width: 992px) {
+    padding-bottom: 3rem;
     .container {
       grid-template-columns: 1fr 1fr 1fr;
       justify-content: center;
