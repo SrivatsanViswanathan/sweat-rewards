@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.section`
   text-align: center;
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.9rem;
   .container {
     display: grid;
     justify-content: center;
