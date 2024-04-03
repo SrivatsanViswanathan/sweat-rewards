@@ -8,8 +8,8 @@ const DisclaimerContainer = () => {
         <Title title='Disclaimer'></Title>
         <div className='content'>
           <p>
-            This is not an official Sweat Economy Website. I have taken all the
-            data from{' '}
+            This is not an official Sweat Economy Website. I have taken the data
+            from{' '}
             <a
               href='https://drive.google.com/drive/folders/1rBSMVCxYxMxvenfal4sa9USQ0nWjwEUI'
               target='_blank'
