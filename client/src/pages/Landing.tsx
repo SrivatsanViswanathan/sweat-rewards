@@ -67,10 +67,10 @@ const Landing = () => {
   return (
     <LandingContext.Provider value={{ response: res }}>
       <Wrapper>
-        <DisclaimerContainer></DisclaimerContainer>
         <SearchContainer></SearchContainer>
         <WinnerContainer></WinnerContainer>
         <FindContainer></FindContainer>
+        <DisclaimerContainer></DisclaimerContainer>
         <FAQContainer></FAQContainer>
       </Wrapper>
     </LandingContext.Provider>
