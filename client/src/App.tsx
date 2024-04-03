@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { HomeLayout, Landing, Winners } from './pages';
+import { Error, HomeLayout, Landing, Winners } from './pages';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 import { action as landingAction } from './pages/Landing';
@@ -16,6 +16,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <HomeLayout></HomeLayout>,
+    errorElement: <Error></Error>,
     children: [
       {
         index: true,
