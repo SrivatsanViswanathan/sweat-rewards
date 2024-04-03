@@ -25,7 +25,6 @@ const DisclaimerContainer = () => {
               Sweat Notion
             </a>
             .
-            <br /> <br />
           </p>
           <p className='accurate'>
             <span className='bold'>

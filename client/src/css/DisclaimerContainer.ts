@@ -20,6 +20,9 @@ const Wrapper = styled.section`
     color: violet;
     text-decoration: underline;
   }
+  .content {
+    margin-bottom: 1rem;
+  }
   .accurate {
     text-align: center;
   }
