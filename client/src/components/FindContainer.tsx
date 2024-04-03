@@ -1,8 +1,8 @@
 import Wrapper from '../css/FindContainer';
 import Title from './Title';
-import profile from '../assets/images/profile.webp';
-import receive from '../assets/images/receive.webp';
-import wallet from '../assets/images/wallet.webp';
+import profile from '../assets/images/profile.jpg';
+import receive from '../assets/images/receive.jpg';
+import wallet from '../assets/images/wallet.jpg';
 const FindContainer = () => {
   return (
     <Wrapper>

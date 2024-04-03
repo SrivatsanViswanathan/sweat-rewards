@@ -39,10 +39,10 @@ const SearchContainer = () => {
             className='paste-button'
             aria-label='Paste Wallet Address'
           >
-            {/* <div className='paste-icon'>
+            <div className='paste-icon'>
               <div className='clip'></div>
               <div className='arrow'></div>
-            </div> */}
+            </div>
           </button>
         </div>
         <button

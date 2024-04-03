@@ -3,7 +3,7 @@ import Title from './Title';
 import faq from '../utils/faq';
 import FAQInfo from './FAQInfo';
 import discord from '../assets/images/discord.webp';
-import thumbnail from '../assets/images/thumbnail.webp';
+import thumbnail from '../assets/images/thumbnail.jpg';
 
 const FAQContainer = () => {
   const questions = faq;

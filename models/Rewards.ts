@@ -8,7 +8,6 @@ const RewardsSchema = new mongoose.Schema(
     },
     winners: {
       type: [String],
-      index: true,
       trim: true,
       required: [true, 'Must provide winners'],
       validate: {

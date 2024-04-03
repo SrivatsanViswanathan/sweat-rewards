@@ -43,10 +43,10 @@ const Wrapper = styled.div`
   }
   td {
     border: 1px solid #ddd;
-    padding: 8px;
-    white-space: nowrap;
+    padding: 4px;
     overflow: hidden;
     text-overflow: ellipsis;
+    line-height: 1.5;
   }
   @media (min-width: 992px) {
     .container {
