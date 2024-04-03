@@ -25,7 +25,7 @@ const Wrapper = styled.section`
   .paste-button {
     position: absolute;
     top: 5px;
-    right: 8px;
+    right: 12px;
     background: transparent;
     border: transparent;
     font-size: 1.25rem;
