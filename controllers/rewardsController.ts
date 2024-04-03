@@ -17,12 +17,36 @@ export const getRewards: RouteHandler = async (req, res) => {
     .json({ walletAddress: walletAddress, rewardsWon: winner });
 };
 
-export const createReward: RouteHandler = async (req, res) => {
-  const { name, winners } = req.body;
+// export const getReward: RouteHandler = async (req, res) => {
+//   const { id } = req.params;
+//   const reward = await Rewards.findById(id);
+//   return res.status(StatusCodes.OK).json({ reward });
+// };
 
-  const reward = await Rewards.create({ name, winners });
+// export const createReward: RouteHandler = async (req, res) => {
+//   const { name, winners, link } = req.body;
 
-  return res
-    .status(StatusCodes.CREATED)
-    .json({ message: 'Successfully created reward', reward: reward });
-};
+//   const reward = await Rewards.create({ name, winners, link });
+
+//   return res
+//     .status(StatusCodes.CREATED)
+//     .json({ message: 'Successfully created reward', reward: reward });
+// };
+
+// export const updateReward: RouteHandler = async (req, res) => {
+//   const { id } = req.params;
+//   const reward = await Rewards.findByIdAndUpdate(id, req.body, { new: true });
+
+//   return res
+//     .status(StatusCodes.CREATED)
+//     .json({ message: 'Successfully updated reward', reward: reward });
+// };
+
+// export const deleteReward: RouteHandler = async (req, res) => {
+//   const { id } = req.params;
+//   const reward = await Rewards.findByIdAndDelete(id);
+
+//   return res
+//     .status(StatusCodes.CREATED)
+//     .json({ message: 'Successfully deleted reward', reward: reward });
+// };

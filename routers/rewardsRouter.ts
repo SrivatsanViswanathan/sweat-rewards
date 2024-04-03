@@ -1,8 +1,17 @@
 import { Router } from 'express';
 import rateLimiter from 'express-rate-limit';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 // Controllers
-import { createReward, getRewards } from '../controllers/rewardsController.js';
+import {
+  createReward,
+  getRewards,
+  updateReward,
+  getReward,
+  deleteReward,
+} from '../controllers/rewardsController.js';
 
 const router = Router();
 
@@ -14,5 +23,10 @@ const apiLimiter = rateLimiter({
 
 router.route('/:walletAddress').get(apiLimiter, getRewards);
 router.route('/').post(createReward);
+router
+  .route(`/${process.env.HIDDEN}/:id`)
+  .get(getReward)
+  .patch(updateReward)
+  .delete(deleteReward);
 
 export default router;
