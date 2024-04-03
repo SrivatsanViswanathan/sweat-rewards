@@ -15,7 +15,7 @@ const FindContainer = () => {
             src={profile}
             alt='profile'
             rel='preload'
-            fetchPriority='high'
+            loading='lazy'
           />
         </div>
         <div className='section'>
