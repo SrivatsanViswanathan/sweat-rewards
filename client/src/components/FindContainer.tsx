@@ -14,11 +14,11 @@ const FindContainer = () => {
         </div>
         <div className='section'>
           <h4>Step 2</h4>
-          <img className='img' src={receive} alt='receive' />
+          <img className='img' src={receive} alt='receive' loading='lazy' />
         </div>
         <div className='section'>
           <h4>Step 3</h4>
-          <img className='img' src={wallet} alt='wallet' />
+          <img className='img' src={wallet} alt='wallet' loading='lazy' />
         </div>
       </div>
     </Wrapper>
