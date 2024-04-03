@@ -32,6 +32,7 @@ const Navbar = () => {
         <div className='nav-header'>
           <a href='https://sweateconomy.com' target='_blank'>
             <img className='img' src={logo} alt='logo' />
+            {/* <h3 className='logo'>SWEAT Economy</h3> */}
           </a>
           <button
             className={isToggle ? 'nav-toggle toggled' : 'nav-toggle'}

@@ -351,7 +351,7 @@ button:disabled {
 .plus::before {
   width: 12px;
   height: 2px;
-  top: 9px;
+  top: 9.5px;
   left: -1.5px;
 }
 

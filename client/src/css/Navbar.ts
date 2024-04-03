@@ -9,6 +9,11 @@ const Wrapper = styled.div`
     justify-content: space-between;
     padding: 1rem;
   }
+  .logo {
+    color: white;
+    font-weight: bold;
+    font-family: 'Amatic SC';
+  }
   .icon {
     color: black;
     border: 1px solid red;
@@ -44,7 +49,7 @@ const Wrapper = styled.div`
     transition: height 1s ease;
   }
   .show-container {
-    height: 4.5rem;
+    height: 3rem;
   }
   .img {
     width: 12rem;

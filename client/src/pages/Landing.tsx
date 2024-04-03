@@ -1,7 +1,11 @@
 import Wrapper from '../css/Landing';
 import FindContainer from '../components/FindContainer';
 import SearchContainer from '../components/SearchContainer';
-import { FAQContainer, WinnerContainer } from '../components';
+import {
+  DisclaimerContainer,
+  FAQContainer,
+  WinnerContainer,
+} from '../components';
 import axios from 'axios';
 import { useActionData } from 'react-router-dom';
 import { createContext, useContext } from 'react';
@@ -63,6 +67,7 @@ const Landing = () => {
   return (
     <LandingContext.Provider value={{ response: res }}>
       <Wrapper>
+        <DisclaimerContainer></DisclaimerContainer>
         <SearchContainer></SearchContainer>
         <WinnerContainer></WinnerContainer>
         <FindContainer></FindContainer>

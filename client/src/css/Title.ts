@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   text-transform: capitalize;
   text-align: center;
-  padding-bottom: 2rem;
+  margin-bottom: 1.5rem;
   h3 {
     font-size: 1.75rem;
   }
