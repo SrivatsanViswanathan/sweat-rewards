@@ -15,7 +15,7 @@ const DisclaimerContainer = () => {
               href='https://drive.google.com/drive/folders/1rBSMVCxYxMxvenfal4sa9USQ0nWjwEUI'
               target='_blank'
             >
-              here
+              Google Drive
             </a>{' '}
             to the best of my ability but cannot guarantee accurate results. For
             example, I may have made a mistake in retrieving the data or not all
@@ -25,7 +25,7 @@ const DisclaimerContainer = () => {
               href='https://walletrewards.notion.site/Sweat-Wallet-Rewards-5c4aaafe38674b919b317a539f765d17'
               target='_blank'
             >
-              here
+              Sweat Notion
             </a>
             .
             <br /> <br />
