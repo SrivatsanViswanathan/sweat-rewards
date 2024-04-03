@@ -13,8 +13,8 @@ getRewards,
 const router = Router();
 const apiLimiter = rateLimiter({
     windowMs: 10 * 60 * 100, // 10 Minutes
-    max: 1,
-    message: { message: 'Too many requests. Try again in 15min' },
+    max: 10,
+    message: { message: 'Too many requests. Try again in 10min' },
 });
 router.route('/:walletAddress').get(apiLimiter, getRewards);
 // router.route('/').post(createReward);
