@@ -8,7 +8,7 @@ const DisclaimerContainer = () => {
         <Title title='Disclaimer'></Title>
         <div className='content'>
           <p>
-            This is not an official Sweat Economy website. The information you
+            This is not an official Sweat Economy Website. The information you
             receive here may not be accurate. I have taken all the information
             from{' '}
             <a
@@ -17,10 +17,8 @@ const DisclaimerContainer = () => {
             >
               Google Drive
             </a>{' '}
-            to the best of my ability but cannot guarantee accurate results. For
-            example, I may have made a mistake in retrieving the data or not all
-            the draws are present there. The official location to find the
-            winners is{' '}
+            to the best of my ability but cannot guarantee accurate results. The
+            official location to find the winners is{' '}
             <a
               href='https://walletrewards.notion.site/Sweat-Wallet-Rewards-5c4aaafe38674b919b317a539f765d17'
               target='_blank'
