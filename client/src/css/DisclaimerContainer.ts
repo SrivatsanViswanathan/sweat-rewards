@@ -20,10 +20,8 @@ const Wrapper = styled.section`
     color: violet;
     text-decoration: underline;
   }
-  .content {
-    margin-bottom: 1rem;
-  }
   .accurate {
+    margin-top: 1rem;
     text-align: center;
   }
   @media (min-width: 992px) {
