@@ -16,8 +16,8 @@ const DisclaimerContainer = () => {
             >
               Google Drive
             </a>{' '}
-            to the best of my ability but cannot guarantee accurate results. The
-            official location to find the winners is{' '}
+            but cannot guarantee accurate results. The official location to find
+            the winners is{' '}
             <a
               href='https://walletrewards.notion.site/Sweat-Wallet-Rewards-5c4aaafe38674b919b317a539f765d17'
               target='_blank'
