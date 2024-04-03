@@ -14,7 +14,6 @@ const FindContainer = () => {
             className='img'
             src={profile}
             alt='profile'
-            rel='preload'
             fetchPriority='high'
           />
         </div>
