@@ -9,15 +9,15 @@ const DisclaimerContainer = () => {
         <div className='content'>
           <p>
             This is not an official Sweat Economy Website. I have taken all the
-            information from{' '}
+            data from{' '}
             <a
               href='https://drive.google.com/drive/folders/1rBSMVCxYxMxvenfal4sa9USQ0nWjwEUI'
               target='_blank'
             >
               Google Drive
             </a>{' '}
-            to the best of my ability but cannot guarantee accurate results. The
-            official location to find the winners is{' '}
+            but cannot guarantee accurate results. The official location to find
+            the winners is{' '}
             <a
               href='https://walletrewards.notion.site/Sweat-Wallet-Rewards-5c4aaafe38674b919b317a539f765d17'
               target='_blank'
