@@ -6,11 +6,11 @@ dotenv.config();
 
 // Controllers
 import {
-  createReward,
+  // createReward,
   getRewards,
-  updateReward,
-  getReward,
-  deleteReward,
+  // updateReward,
+  // getReward,
+  // deleteReward,
 } from '../controllers/rewardsController.js';
 
 const router = Router();
@@ -22,11 +22,11 @@ const apiLimiter = rateLimiter({
 });
 
 router.route('/:walletAddress').get(apiLimiter, getRewards);
-router.route('/').post(createReward);
-router
-  .route(`/${process.env.HIDDEN}/:id`)
-  .get(getReward)
-  .patch(updateReward)
-  .delete(deleteReward);
+// router.route('/').post(createReward);
+// router
+//   .route(`/${process.env.HIDDEN}/:id`)
+//   .get(getReward)
+//   .patch(updateReward)
+//   .delete(deleteReward);
 
 export default router;
