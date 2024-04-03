@@ -26,7 +26,6 @@ const Wrapper = styled.section`
   .img {
     width: 80vw;
     height: 100%;
-    object-fit: cover;
     max-width: var(--fixed-width);
   }
   @media (min-width: 992px) {
