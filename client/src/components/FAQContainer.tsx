@@ -32,6 +32,7 @@ const FAQContainer = () => {
                 className='img'
                 src={thumbnail}
                 alt='youtube video'
+                rel='preload'
                 loading='lazy'
               />
             </a>
