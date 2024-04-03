@@ -28,12 +28,16 @@ createReadStream(csvFilePath)
     console.log('Winners:', winners);
     try {
       await mongoose.connect(process.env.MONGO_URL);
+      const name = 'Win 2500 $SWEAT (March 2024)';
+      const link =
+        'https://docs.google.com/spreadsheets/d/1w2BtuCENT0xKqVz6TxcS6vYk2vTP6vROMZWxGpCJzGI/edit#gid=272259016';
       await Rewards.create({
-        name: 'Test Reward For Duplicate (March 2023)',
+        name: name,
         winners,
-        link: 'https://docs.google.com/spreadsheets/d/16Z8JXITOxOhDX55-sCuHF0KDVqwHv2HhssIKCj3j4v4/edit#gid=517347639',
+        link: link,
       });
-      console.log('Success');
+      console.log(`Success: ${name}`);
+      console.log(`Winners: ${winners.length}`);
       process.exit(0);
     } catch (error) {
       console.log(error);
