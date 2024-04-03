@@ -28,13 +28,7 @@ const FAQContainer = () => {
               target='_blank'
               aria-label='Sweat Economy YouTube Video'
             >
-              <img
-                className='img'
-                src={thumbnail}
-                alt='youtube video'
-                rel='preload'
-                loading='lazy'
-              />
+              <img className='img' src={thumbnail} alt='youtube video' />
             </a>
             <a
               href='https://discord.gg/sweateconomy'
@@ -42,7 +36,7 @@ const FAQContainer = () => {
               target='_blank'
               aria-label='Sweat Economy Discord Server'
             >
-              <img src={discord} alt='discord' rel='preload' loading='lazy' />
+              <img src={discord} alt='discord' />
             </a>
           </div>
         </section>
