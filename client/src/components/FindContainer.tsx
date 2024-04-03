@@ -14,16 +14,29 @@ const FindContainer = () => {
             className='img'
             src={profile}
             alt='profile'
+            rel='preload'
             fetchPriority='high'
           />
         </div>
         <div className='section'>
           <h4>Step 2</h4>
-          <img className='img' src={receive} alt='receive' loading='lazy' />
+          <img
+            className='img'
+            src={receive}
+            alt='receive'
+            rel='preload'
+            loading='lazy'
+          />
         </div>
         <div className='section'>
           <h4>Step 3</h4>
-          <img className='img' src={wallet} alt='wallet' loading='lazy' />
+          <img
+            className='img'
+            src={wallet}
+            alt='wallet'
+            rel='preload'
+            loading='lazy'
+          />
         </div>
       </div>
     </Wrapper>

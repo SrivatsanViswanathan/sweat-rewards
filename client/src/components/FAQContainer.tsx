@@ -41,7 +41,7 @@ const FAQContainer = () => {
               target='_blank'
               aria-label='Sweat Economy Discord Server'
             >
-              <img src={discord} alt='discord' loading='lazy' />
+              <img src={discord} alt='discord' rel='preload' loading='lazy' />
             </a>
           </div>
         </section>
