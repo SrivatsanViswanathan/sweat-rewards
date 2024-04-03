@@ -8,7 +8,7 @@ const router = Router();
 
 const apiLimiter = rateLimiter({
   windowMs: 10 * 60 * 100, // 10 Minutes
-  max: 10,
+  max: 1,
   message: { message: 'Too many requests. Try again in 15min' },
 });
 

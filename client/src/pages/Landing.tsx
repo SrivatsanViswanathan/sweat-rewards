@@ -27,7 +27,7 @@ const winnerQuery = (wallet: landingProps) => {
           );
           return response;
         } catch (error: any) {
-          toast.error(error.response.wallet.message);
+          toast.error(error.response.data.message);
           return error;
         }
       },
