@@ -10,7 +10,7 @@ const FindContainer = () => {
       <div className='container'>
         <div className='section'>
           <h4>Step 1</h4>
-          <img className='img' src={profile} alt='profile' />
+          <img className='img' src={profile} alt='profile' loading='lazy' />
         </div>
         <div className='section'>
           <h4>Step 2</h4>
