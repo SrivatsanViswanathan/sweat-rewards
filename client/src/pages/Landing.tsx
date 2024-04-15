@@ -7,27 +7,23 @@ import {
   WinnerContainer,
 } from '../components';
 import axios from 'axios';
-import { useActionData } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { createContext, useContext } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { toast } from 'react-toastify';
-
-interface landingProps {
-  walletAddress: string;
-}
 
 interface LandingContextType {
   response: any;
 }
 
-const winnerQuery = (wallet: landingProps) => {
-  if (wallet !== undefined) {
+const winnerQuery = (walletAddress: any) => {
+  if (walletAddress !== undefined && walletAddress !== null) {
     return {
-      queryKey: ['winner', wallet.walletAddress],
+      queryKey: ['winner', walletAddress],
       queryFn: async () => {
         try {
           const response = await axios.get(
-            `api/v1/rewards/${wallet.walletAddress}`
+            `api/v1/?walletAddress=${walletAddress}`
           );
           return response;
         } catch (error: any) {
@@ -45,24 +41,51 @@ const winnerQuery = (wallet: landingProps) => {
   };
 };
 
-export const action = async ({ request }: any) => {
-  try {
-    const formData = await request.formData();
-    const data = Object.fromEntries(formData);
-    // const response = await axios.get(`api/v1/rewards/${data.walletAddress}`);
-    // return response.data;
-    return data;
-  } catch (error) {
-    console.log(error);
-  }
-};
+// export const action = async (queryParams: any) => {
+//   try {
+//     const { walletAddress } = queryParams;
+//     if (walletAddress) {
+//       const response = await axios.get(
+//         `api/v1/?walletAddress=${walletAddress}`
+//       );
+//       return response.data;
+//     }
+//   } catch (error) {
+//     console.error('Error:', error);
+//     throw error;
+//   }
+// };
 
 const LandingContext = createContext({} as LandingContextType);
 
 const Landing = () => {
-  const data: any = useActionData();
-  const response = useQuery(winnerQuery(data));
-  const res = response.data ? response.data.data : undefined;
+  // const response = useQuery(winnerQuery(data));
+  // const res = response.data ? response.data.data : undefined;
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const walletAddress = queryParams.get('walletAddress');
+  const response = useQuery(winnerQuery(walletAddress));
+  const res = response?.data?.data;
+
+  // const response = walletAddress ? useQuery(winnerQuery(walletAddress)) : null;
+  // const res = response?.data?.data;
+
+  // const fetchData = async () => {
+  //   const queryParams = new URLSearchParams(location.search);
+  //   try {
+  //     const result = await action({
+  //       walletAddress: queryParams.get('walletAddress'),
+  //     });
+  //     setData(result);
+  //   } catch (error) {
+  //     console.error('Error:', error);
+  //   }
+  // };
+
+  // // Call fetchData when component mounts or location changes
+  // useEffect(() => {
+  //   fetchData();
+  // }, [location.search]);
 
   return (
     <LandingContext.Provider value={{ response: res }}>

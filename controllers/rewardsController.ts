@@ -8,7 +8,7 @@ interface RouteHandler {
 
 // Get Rewards
 export const getRewards: RouteHandler = async (req, res) => {
-  const { walletAddress } = req.params;
+  const { walletAddress } = req.query;
   const winner = await Rewards.find({ winners: walletAddress }).select(
     'name link'
   );

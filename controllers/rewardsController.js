@@ -2,7 +2,7 @@ import { StatusCodes } from 'http-status-codes';
 import Rewards from '../models/Rewards.js';
 // Get Rewards
 export const getRewards = async (req, res) => {
-    const { walletAddress } = req.params;
+    const { walletAddress } = req.query;
     const winner = await Rewards.find({ winners: walletAddress }).select('name link');
     return res
         .status(StatusCodes.OK)

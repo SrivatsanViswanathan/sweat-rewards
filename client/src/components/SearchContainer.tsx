@@ -1,10 +1,8 @@
 import { Form } from 'react-router-dom';
 import Wrapper from '../css/SearchContainer';
 import { useState } from 'react';
-
 const SearchContainer = () => {
   const [clipboardText, setClipboardText] = useState('');
-
   const handlePaste = () => {
     navigator.clipboard
       .readText()
@@ -17,7 +15,7 @@ const SearchContainer = () => {
   };
   return (
     <Wrapper>
-      <Form method='post' className='form'>
+      <Form method='get' className='form'>
         <label htmlFor='walletAddress' className='form-label'>
           Sweat Wallet Address
         </label>

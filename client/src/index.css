@@ -406,7 +406,6 @@ button:disabled {
 .paste-icon {
   width: 18px;
   height: 24px;
-  position: relative;
 }
 
 .paste-icon .clip {

@@ -1,13 +1,13 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Error, HomeLayout, Landing, Winners } from './pages';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-
-import { action as landingAction } from './pages/Landing';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+// import { action as landingAction } from './pages/Landing';
 
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      staleTime: 1000 * 60 * 60, // 1 hour
+      staleTime: 10 * 60 * 1000, // 10 minutes
     },
   },
 });
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Landing></Landing>,
-        action: landingAction,
+        // action: landingAction,
       },
       {
         path: 'winners',
@@ -35,6 +35,7 @@ const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <RouterProvider router={router}></RouterProvider>
+      <ReactQueryDevtools />
     </QueryClientProvider>
   );
 };

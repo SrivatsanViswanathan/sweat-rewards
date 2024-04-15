@@ -16,7 +16,7 @@ const apiLimiter = rateLimiter({
     max: 10,
     message: { message: 'Too many requests. Try again in 10min' },
 });
-router.route('/:walletAddress').get(apiLimiter, getRewards);
+router.route('/').get(apiLimiter, getRewards);
 // router.route('/').post(createReward);
 // router
 //   .route(`/${process.env.HIDDEN}/:id`)

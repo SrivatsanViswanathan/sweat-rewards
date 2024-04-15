@@ -4,6 +4,7 @@ import { useLandingContext } from '../pages/Landing';
 interface WinnerProps {
   response: any;
   rewardsWon: any;
+  walletAddress: string;
 }
 
 const WinnerContainer = () => {
@@ -11,6 +12,7 @@ const WinnerContainer = () => {
   const rewardsWon = response ? response.rewardsWon : undefined;
   if (rewardsWon) {
     if (rewardsWon.length > 0) {
+      console.log(response.walletAddress);
       return (
         <Wrapper>
           <div className='winner'>
@@ -48,7 +50,13 @@ const WinnerContainer = () => {
   }
   return (
     <Wrapper>
-      <div className={rewardsWon ? 'loser active' : 'loser'}>
+      <div
+        className={
+          rewardsWon && response.walletAddress != 'null'
+            ? 'loser active'
+            : 'loser'
+        }
+      >
         <div>
           <p>You have not won any rewards 😭 Hopefully you win one soon!</p>
         </div>

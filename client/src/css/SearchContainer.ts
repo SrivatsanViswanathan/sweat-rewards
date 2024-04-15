@@ -18,14 +18,17 @@ const Wrapper = styled.section`
   }
   .btn-block {
     background: black;
+    margin-top: 0.3rem;
+    width: calc(100% - 0.3rem - 18px);
   }
   .paste-button-container {
-    position: relative;
+    display: flex;
+    gap: 0.3rem;
+    width: 100%;
   }
   .paste-button {
-    position: absolute;
     top: 5px;
-    right: 12px;
+    right: 8px;
     background: transparent;
     border: transparent;
     font-size: 1.25rem;

@@ -19,7 +19,7 @@ app.use(helmet());
 app.use(mongoSanitize());
 const port = process.env.PORT || 5100;
 // Router
-app.use('/api/v1/rewards', rewardsRouter);
+app.use('/api/v1/', rewardsRouter);
 // Load front end
 const loadFrontEnd = (req, res) => {
     res.sendFile(path.resolve(__dirname, './client/dist', 'index.html'));
