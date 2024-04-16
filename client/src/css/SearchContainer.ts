@@ -19,7 +19,8 @@ const Wrapper = styled.section`
   .btn-block {
     background: black;
     margin-top: 0.3rem;
-    width: calc(100% - 0.3rem - 18px);
+    margin-left: calc(0.3rem + 24px);
+    width: calc(100% - 0.3rem - 18px - 0.3rem - 24px);
   }
   .paste-button-container {
     display: flex;

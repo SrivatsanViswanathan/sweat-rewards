@@ -1,8 +1,11 @@
-import { Form } from 'react-router-dom';
+import { Form, useLocation, Link } from 'react-router-dom';
 import Wrapper from '../css/SearchContainer';
 import { useState } from 'react';
 const SearchContainer = () => {
-  const [clipboardText, setClipboardText] = useState('');
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const walletAddress: any = queryParams.get('walletAddress');
+  const [clipboardText, setClipboardText] = useState(walletAddress);
   const handlePaste = () => {
     navigator.clipboard
       .readText()
@@ -20,6 +23,14 @@ const SearchContainer = () => {
           Sweat Wallet Address
         </label>
         <div className='paste-button-container'>
+          <Link
+            to={'/'}
+            className='reload'
+            onClick={() => setClipboardText('')}
+          >
+            <span>&#x21bb;</span>
+          </Link>
+
           <input
             type='text'
             id='walletAddress'
