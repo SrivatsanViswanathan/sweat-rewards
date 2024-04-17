@@ -20,9 +20,15 @@ export const faq: FAQProp[] = [
   },
   {
     id: nanoid(),
+    title: 'what are gas fees?',
+    description:
+      'Gas fees is a cost you pay to process a transaction on a blockchain. Transactions are when you move an asset from one location to another. Gas fees are paid in the native token for the blockchain. Sweat is on the Near blockchain so gas fees are paid in Near. You can read about gas fees on <a href="https://www.reddit.com/r/Sweateconomy/comments/1ath4hs/gas_fee_explanation/" target="_blank" rel="noopener noreferrer">This Subreddit Post</a> or on the <a href="https://docs.near.org/concepts/protocol/gas" target="_blank" rel="noopener noreferrer">Near Docs</a>',
+  },
+  {
+    id: nanoid(),
     title: 'how do i claim my reward?',
     description:
-      'Congrats on winning a reward! You will receive an email from Sweat Economy for details on how to claim your prize. You should receive the email within 2 weeks. If you have not, you can go to the official Sweat Economy Discord Server and someone will help you there.',
+      'Congrats on winning a reward! You will receive an email from Sweat Economy for details on how to claim your prize. You should receive the email within 2 weeks. If you have not, you can go to the official  <a href="https://discord.gg/sweateconomy" target="_blank" rel="noopener noreferrer">Sweat Economy Discord Server</a> and someone will help you there.',
   },
   {
     id: nanoid(),
@@ -34,7 +40,7 @@ export const faq: FAQProp[] = [
     id: nanoid(),
     title: 'i have another question',
     description:
-      'Go to the official Sweat Economy Discord Server and ask there! There are Mods and Community Managers available to help you with any problem you have.',
+      'Go to the official <a href="https://discord.gg/sweateconomy" target="_blank" rel="noopener noreferrer">Sweat Economy Discord Server</a> or <a href="https://www.reddit.com/r/Sweateconomy/" target="_blank" rel="noopener noreferrer">Sweat Economy Subreddit</a> and ask there! There are Mods and Community Managers available to help you with any problem you have.',
   },
 ];
 

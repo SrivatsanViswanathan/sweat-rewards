@@ -4,6 +4,7 @@ import faq from '../utils/faq';
 import FAQInfo from './FAQInfo';
 import discord from '../assets/images/discord.webp';
 import thumbnail from '../assets/images/thumbnail.webp';
+import reddit from '../assets/images/reddit.png';
 
 const FAQContainer = () => {
   const questions = faq;
@@ -30,14 +31,24 @@ const FAQContainer = () => {
             >
               <img className='img' src={thumbnail} alt='youtube video' />
             </a>
-            <a
-              href='https://discord.gg/sweateconomy'
-              className='discord-link'
-              target='_blank'
-              aria-label='Sweat Economy Discord Server'
-            >
-              <img src={discord} alt='discord' />
-            </a>
+            <div className='socials'>
+              <a
+                href='https://discord.gg/sweateconomy'
+                className='discord-link'
+                target='_blank'
+                aria-label='Sweat Economy Discord Server'
+              >
+                <img src={discord} alt='discord' />
+              </a>
+              <a
+                href='https://www.reddit.com/r/Sweateconomy'
+                className='reddit-link'
+                target='_blank'
+                aria-label='Sweat Economy Reddit'
+              >
+                <img src={reddit} alt='reddit' />
+              </a>
+            </div>
           </div>
         </section>
       </div>

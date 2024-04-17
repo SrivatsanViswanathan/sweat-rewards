@@ -42,6 +42,10 @@ const Wrapper = styled.section`
     align-self: center;
     min-width: 2rem;
   }
+  a {
+    color: violet;
+    text-decoration: underline;
+  }
   @media (min-width: 992px) {
     .question h4 {
       font-size: 1.5rem;

@@ -10,7 +10,7 @@ const Wrapper = styled.div`
     #9b59b6,
     #9b59b6,
     #4b0082,
-    #4b0082
+    #2e0854
   );
 `;
 

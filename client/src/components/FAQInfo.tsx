@@ -11,6 +11,7 @@ interface questionProps {
 const FAQInfo = ({ question }: questionProps) => {
   const [showInfo, setShowInfo] = useState(false);
   const { title, description } = question;
+
   return (
     <Wrapper>
       <article className='question'>
@@ -28,7 +29,9 @@ const FAQInfo = ({ question }: questionProps) => {
             )}
           </button>
         </header>
-        {showInfo ? <p>{description}</p> : null}
+        {showInfo ? (
+          <p dangerouslySetInnerHTML={{ __html: description }}></p>
+        ) : null}
       </article>
     </Wrapper>
   );
