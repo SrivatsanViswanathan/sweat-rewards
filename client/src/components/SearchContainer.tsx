@@ -39,7 +39,7 @@ const SearchContainer = () => {
             placeholder='1d61e465ce62e0de5900b7f090b864585c771c316d868d2582d3a43630509d8b'
             minLength={64}
             required
-            value={clipboardText}
+            value={clipboardText || ''}
             onChange={(e) => setClipboardText(e.target.value)}
           />
           <button

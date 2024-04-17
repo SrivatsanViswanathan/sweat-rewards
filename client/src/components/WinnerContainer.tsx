@@ -12,7 +12,6 @@ const WinnerContainer = () => {
   const rewardsWon = response ? response.rewardsWon : undefined;
   if (rewardsWon) {
     if (rewardsWon.length > 0) {
-      console.log(response.walletAddress);
       return (
         <Wrapper>
           <div className='winner'>
