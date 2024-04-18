@@ -5,11 +5,11 @@ import Wrapper from '../css/Navbar';
 import logo from '../assets/images/sweat.svg';
 
 const Navbar = () => {
-  const [showLinks, setShowLinks] = useState(window.innerWidth > 768);
+  const [showLinks, setShowLinks] = useState(window.innerWidth > 992);
   const [isToggle, setToggle] = useState(false);
 
   const toggleLinks = () => {
-    const isMobile = window.innerWidth <= 768;
+    const isMobile = window.innerWidth <= 992;
     if (isMobile) {
       setShowLinks(!showLinks);
       setToggle(!isToggle);
@@ -17,7 +17,7 @@ const Navbar = () => {
   };
   useEffect(() => {
     const handleResize = () => {
-      setShowLinks(window.innerWidth > 768);
+      setShowLinks(window.innerWidth > 992);
     };
 
     window.addEventListener('resize', handleResize);
