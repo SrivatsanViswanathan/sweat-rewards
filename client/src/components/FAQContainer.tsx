@@ -40,6 +40,8 @@ const FAQContainer = () => {
               >
                 <img src={discord} alt='discord' />
               </a>
+              <div></div>
+              <div></div>
               <a
                 href='https://www.reddit.com/r/Sweateconomy'
                 className='reddit-link'

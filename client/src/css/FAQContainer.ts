@@ -70,7 +70,7 @@ const Wrapper = styled.section`
       grid-template-columns: 1fr 1fr;
       align-items: center;
       justify-content: space-between;
-      gap: 3rem;
+      gap: 2rem;
     }
     .video {
       display: flex;
