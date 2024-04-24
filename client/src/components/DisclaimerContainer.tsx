@@ -8,8 +8,9 @@ const DisclaimerContainer = () => {
         <Title title='Disclaimer'></Title>
         <div className='content'>
           <p>
-            This is not an official Sweat Economy Website. I have taken the data
-            from{' '}
+            This website was created to provide users a better experience when
+            checking the results of prize draws. However, this is not an
+            official Sweat Economy Website. I have taken the data from{' '}
             <a
               href='https://drive.google.com/drive/folders/1rBSMVCxYxMxvenfal4sa9USQ0nWjwEUI'
               target='_blank'
@@ -28,8 +29,8 @@ const DisclaimerContainer = () => {
           </p>
           <p className='accurate'>
             <span className='bold'>
-              Due to the Google Drive being the source, I do not have the data
-              for all the winners from September 2022 - February 2023
+              Due to the Google Drive being the source of winners, I do not have
+              the data for September 2022 - February 2023
             </span>
           </p>
         </div>
