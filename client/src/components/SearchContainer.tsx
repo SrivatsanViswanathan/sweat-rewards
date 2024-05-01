@@ -6,6 +6,7 @@ const SearchContainer = () => {
   const queryParams = new URLSearchParams(location.search);
   const walletAddress: any = queryParams.get('walletAddress');
   const [clipboardText, setClipboardText] = useState(walletAddress);
+
   const handlePaste = () => {
     navigator.clipboard
       .readText()
@@ -16,9 +17,16 @@ const SearchContainer = () => {
         console.error('Failed to read clipboard:', error);
       });
   };
+
   return (
     <Wrapper>
       <Form method='get' className='form'>
+        <div className='update-container'>
+          <div className='update'>
+            Winners data includes prize draws held up to April 18
+          </div>
+          <div className='underline'></div>
+        </div>
         <label htmlFor='walletAddress' className='form-label'>
           Sweat Wallet Address
         </label>

@@ -5,6 +5,8 @@ import FAQInfo from './FAQInfo';
 import discord from '../assets/images/discord.webp';
 import thumbnail from '../assets/images/thumbnail.webp';
 import reddit from '../assets/images/reddit.png';
+import telegram from '../assets/images/telegram.png';
+import twitter from '../assets/images/twitter.png';
 
 const FAQContainer = () => {
   const questions = faq;
@@ -40,8 +42,25 @@ const FAQContainer = () => {
               >
                 <img src={discord} alt='discord' />
               </a>
-              <div></div>
-              <div></div>
+              <a
+                href='https://t.me/sweateconomy/'
+                className='telegram-link'
+                target='_blank'
+                aria-label='Sweat Economy Telegram Server'
+              >
+                <div className='telegram-container'>
+                  <img className='telegram-img' src={telegram} alt='telegram' />
+                  <h4>Telegram</h4>
+                </div>
+              </a>
+              <a
+                href='https://twitter.com/SweatEconomy'
+                className='twitter-link'
+                target='_blank'
+                aria-label='Sweat Economy Twitter'
+              >
+                <img className='twitter-img' src={twitter} alt='twitter' />
+              </a>
               <a
                 href='https://www.reddit.com/r/Sweateconomy'
                 className='reddit-link'

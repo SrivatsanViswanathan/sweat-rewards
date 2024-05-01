@@ -21,7 +21,7 @@ const Wrapper = styled.section`
   }
   .socials {
     display: grid;
-    gap: 0.5rem;
+    gap: 1rem;
   }
   .video {
     h4 {
@@ -40,10 +40,37 @@ const Wrapper = styled.section`
       height: auto;
       margin: auto;
     }
+    .telegram-link {
+      width: 4rem;
+      height: auto;
+      margin: auto;
+    }
+    .twitter-link {
+      width: 5rem;
+      height: auto;
+      margin: auto;
+    }
     .discord-link,
-    .reddit-link {
+    .reddit-link,
+    .telegram-link,
+    .twitter-link {
       img {
         display: block;
+      }
+    }
+    .telegram-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      h4 {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        color: #229ed9;
+        font-weight: bolder;
+        width: 10rem;
+        height: 5rem;
       }
     }
   }
@@ -70,7 +97,7 @@ const Wrapper = styled.section`
       grid-template-columns: 1fr 1fr;
       align-items: center;
       justify-content: space-between;
-      gap: 2rem;
+      gap: 1.75rem;
     }
     .video {
       display: flex;
@@ -92,6 +119,29 @@ const Wrapper = styled.section`
         margin-top: 1rem;
         margin-left: 1.5rem;
         width: 20rem;
+      }
+      .telegram-link {
+        width: 1rem;
+        margin: 0;
+      }
+      .twitter-link {
+        width: 4rem;
+        margin-left: 10rem;
+      }
+      .telegram-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        width: 16rem;
+        justify-content: center;
+        .telegram-img {
+          width: 4rem;
+        }
+        h4 {
+          font-size: 2rem;
+          color: #229ed9;
+          font-weight: bolder;
+        }
       }
     }
   }
