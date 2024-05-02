@@ -23,7 +23,7 @@ const SearchContainer = () => {
       <Form method='get' className='form'>
         <div className='update-container'>
           <div className='update'>
-            Winners data includes prize draws held up to April 18
+            Winners data is up to date as of May 2 2024
           </div>
           <div className='underline'></div>
         </div>
