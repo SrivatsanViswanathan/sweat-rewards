@@ -28,9 +28,9 @@ createReadStream(csvFilePath)
     console.log('Winners:', winners);
     try {
       await mongoose.connect(process.env.MONGO_URL);
-      const name = 'Win 2500 $SWEAT (April 2024)';
+      const name = '$5 Spend As You Like (April 2024)';
       const link =
-        'https://docs.google.com/spreadsheets/d/1C-DjQ3azFlrfop9DDSMAmwOzu3vXdMm--huZdJuzd6A/edit#gid=1878275808';
+        'https://docs.google.com/spreadsheets/d/1i4luVUCbPaG4ywyAnVA27X7iZ02F5DWpMiSjSfmorGw/edit#gid=1449516164';
       await Rewards.create({
         name: name,
         winners,

@@ -23,7 +23,7 @@ const SearchContainer = () => {
       <Form method='get' className='form'>
         <div className='update-container'>
           <div className='update'>
-            Winners data is up to date as of May 2 2024
+            Winners data is up to date as of May 7 2024
           </div>
           <div className='underline'></div>
         </div>
