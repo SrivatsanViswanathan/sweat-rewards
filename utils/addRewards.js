@@ -28,15 +28,16 @@ createReadStream(csvFilePath)
     console.log('Winners:', winners);
     try {
       await mongoose.connect(process.env.MONGO_URL);
-      const name = '$5 Spend As You Like (April 2024)';
+      const name = 'Win Exciting Rewards from AYLAB (June 2024)';
       const link =
-        'https://docs.google.com/spreadsheets/d/1i4luVUCbPaG4ywyAnVA27X7iZ02F5DWpMiSjSfmorGw/edit#gid=1449516164';
+        'https://docs.google.com/spreadsheets/d/1AH-afQbpnZy4hcCiPUzRc0z5n0TeeKqr7BNvoK82eoU/edit?gid=1909377857#gid=1909377857';
       await Rewards.create({
         name: name,
         winners,
         link: link,
       });
       console.log(`Success: ${name}`);
+      console.log(`Link: ${link}`);
       console.log(`Winners: ${winners.length}`);
       process.exit(0);
     } catch (error) {
