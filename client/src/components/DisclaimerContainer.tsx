@@ -24,13 +24,16 @@ const DisclaimerContainer = () => {
               target='_blank'
             >
               Sweat Notion
-            </a>
+            </a>{' '}
             .
           </p>
           <p className='accurate'>
             <span className='bold'>
               Due to the Google Drive being the source of winners, I do not have
               the data for September 2022 - February 2023
+              <br />
+              <br />I check the Google Drive everyday. I only change the date
+              when I add rewards to the database
             </span>
           </p>
         </div>

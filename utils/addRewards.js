@@ -28,9 +28,9 @@ createReadStream(csvFilePath)
     console.log('Winners:', winners);
     try {
       await mongoose.connect(process.env.MONGO_URL);
-      const name = '$5 Spend As You Like Giftcard (June 2024)';
+      const name = 'Visit Dominican Republic (June 2024)';
       const link =
-        'https://docs.google.com/spreadsheets/d/1k2Oe6BNmJcJqniz_hONOuOe1tLv7g4_WtKofActPIBc/edit?gid=1220129294#gid=1220129294';
+        'https://docs.google.com/spreadsheets/d/1hwNApbRxDjVxI61iglk6Sc9hebFekyshtdv3rqoWniE/edit?gid=522909824#gid=522909824';
       await Rewards.create({
         name: name,
         winners,
