@@ -28,9 +28,9 @@ createReadStream(csvFilePath)
     console.log('Winners:', winners);
     try {
       await mongoose.connect(process.env.MONGO_URL);
-      const name = 'Win Exciting Rewards from AYLAB (June 2024)';
+      const name = '$5 Spend As You Like Giftcard (June 2024)';
       const link =
-        'https://docs.google.com/spreadsheets/d/1AH-afQbpnZy4hcCiPUzRc0z5n0TeeKqr7BNvoK82eoU/edit?gid=1909377857#gid=1909377857';
+        'https://docs.google.com/spreadsheets/d/1k2Oe6BNmJcJqniz_hONOuOe1tLv7g4_WtKofActPIBc/edit?gid=1220129294#gid=1220129294';
       await Rewards.create({
         name: name,
         winners,

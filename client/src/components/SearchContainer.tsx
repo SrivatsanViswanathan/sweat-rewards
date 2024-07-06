@@ -23,7 +23,9 @@ const SearchContainer = () => {
       <Form method='get' className='form'>
         <div className='update-container'>
           <div className='update'>
-            Winners data is up to date as of June 20 2024
+            Winners data is up to date as of July 5 2024 (I check the Google
+            Drive everyday, I only change this date when I add rewards to the
+            database)
           </div>
           <div className='underline'></div>
         </div>
